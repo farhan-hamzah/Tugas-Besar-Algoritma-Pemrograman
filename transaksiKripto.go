@@ -31,7 +31,7 @@ type account struct{
 	moneyFiat float64
 	saldoVirtual wallet
 }
-func jualBeli(tipeJualBeli string, dataJualBeli[NMAX]*transaksi, wallet[NMAX] account, id, pw int, n *int, uangFiat *float64){
+func jualBeli(tipeJualBeli string, dataJualBeli *[NMAX] transaksi, wallet *[NMAX] account, id, pw int, n *int, uangFiat *float64){
 	var pasokanKripto, jumlahKriptoYangDijual, jumlahKriptoYangDibeli,  nilaiBeliKripto int
 	var i, tanggal, bulan, tahun, idxWallet int
 	var nilaiJualKripto float64

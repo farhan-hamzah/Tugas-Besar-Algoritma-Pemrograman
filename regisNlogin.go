@@ -38,9 +38,9 @@ func main(){
 	fmt.Println("2. Buat akun")
 	fmt.Print("Pilih: ")
 	fmt.Scan(&pilihAkun)
-	login(akun, &pilihAkun, &n)
+	login(&akun, &pilihAkun, &n)
 }
-func login(akun[NMAX] account, pilihAkun *int, n *int){
+func login(akun *[NMAX] account, pilihAkun *int, n *int){
 	var i, id int
 	var usrn string
 	var uangFiat float64
